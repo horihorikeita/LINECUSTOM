@@ -1,0 +1,76 @@
+.eyecatch {
+  position: relative;
+  background-color: #66caf1;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  @include tab {
+    height: auto;
+  }
+  @include sp {
+    height: auto;
+    flex-direction: column;
+  }
+}
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: #09b801;
+  color: #fff;
+  position: absolute;
+  padding: 10px;
+  top: 4%;
+  left: 4%;
+  @include tab {
+    font-size: 2rem;
+    padding: 5px;
+  }
+  @include sp {
+    font-size: 1.5rem;
+    padding: 3px;
+  }
+}
+.eye-txt-box {
+  text-align: center;
+}
+.catchcopy {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #fff;
+  @include tab {
+    font-size: 4rem;
+  }
+  @include sp {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+}
+.eye-txt {
+  font-size: 2rem;
+  margin-top: 5%;
+  font-weight: bold;
+  @include tab {
+    font-size: 1.5em;
+  }
+  @include sp {
+    font-size: 0.8rem;
+  }
+}
+.eye-img {
+  display: block;
+  margin-left: 10%;
+  height: 90%;
+  width: 40%;
+  @include sp {
+    order: -2;
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}

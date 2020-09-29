@@ -1,0 +1,101 @@
+//////////////////
+////   mixin　////
+/////////////////
+
+@mixin pc {
+  @media screen and (min-width: 960px) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (max-width: 959px) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: 560px) {
+    @content;
+  }
+}
+
+//////////////////
+////   共通　　////
+/////////////////
+
+html {
+  font-size: 67.5%;
+  line-height: 1.67;
+  text-align: center;
+}
+.wrap {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.btn {
+  width: 60%;
+  height: auto;
+  padding: 10px;
+  border-radius: 50px;
+  margin-top: 7%;
+  font-size: 3rem;
+  font-weight: bold;
+  border: none;
+  color: #fff;
+  background-color: #09b801;
+  @include tab {
+    font-size: 2rem;
+  }
+  @include sp {
+    font-size: 1.6rem;
+  }
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.title {
+  font-size: 2rem;
+  &:before {
+    margin-right: 3px;
+  }
+  &:before,
+  &:after {
+    width: 20px;
+    display: inline-block;
+    content: "";
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+  }
+}
+
+.concept,
+.function,
+.invite {
+  padding: 80px 0 80px;
+}
+
+.txtl {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 6rem;
+  margin-top: 50px;
+  @include tab {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+  @include sp {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+}
+.txtm {
+  font-size: 2rem;
+  line-height: 3.5rem;
+  margin-top: 50px;
+  @include tab {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}

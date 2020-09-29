@@ -1,0 +1,359 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=reset.css.map */
+html {
+  font-size: 67.5%;
+  line-height: 1.67;
+  text-align: center;
+}
+
+.wrap {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.btn {
+  width: 60%;
+  height: auto;
+  padding: 10px;
+  border-radius: 50px;
+  margin-top: 7%;
+  font-size: 3rem;
+  font-weight: bold;
+  border: none;
+  color: #fff;
+  background-color: #09b801;
+}
+@media screen and (max-width: 959px) {
+  .btn {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .btn {
+    font-size: 1.6rem;
+  }
+}
+.btn:hover {
+  opacity: 0.7;
+}
+
+.title {
+  font-size: 2rem;
+}
+.title:before {
+  margin-right: 3px;
+}
+.title:before, .title:after {
+  width: 20px;
+  display: inline-block;
+  content: "";
+  border-bottom: 1px solid black;
+  margin-bottom: 1rem;
+}
+
+.concept,
+.function,
+.invite {
+  padding: 80px 0 80px;
+}
+
+.txtl {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 6rem;
+  margin-top: 50px;
+}
+@media screen and (max-width: 959px) {
+  .txtl {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .txtl {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+}
+
+.txtm {
+  font-size: 2rem;
+  line-height: 3.5rem;
+  margin-top: 50px;
+}
+@media screen and (max-width: 959px) {
+  .txtm {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+.eyecatch {
+  position: relative;
+  background-color: #66caf1;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+@media screen and (max-width: 959px) {
+  .eyecatch {
+    height: auto;
+  }
+}
+@media screen and (max-width: 560px) {
+  .eyecatch {
+    height: auto;
+    flex-direction: column;
+  }
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: #09b801;
+  color: #fff;
+  position: absolute;
+  padding: 10px;
+  top: 4%;
+  left: 4%;
+}
+@media screen and (max-width: 959px) {
+  .logo {
+    font-size: 2rem;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .logo {
+    font-size: 1.5rem;
+    padding: 3px;
+  }
+}
+
+.eye-txt-box {
+  text-align: center;
+}
+
+.catchcopy {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #fff;
+}
+@media screen and (max-width: 959px) {
+  .catchcopy {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .catchcopy {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+}
+
+.eye-txt {
+  font-size: 2rem;
+  margin-top: 5%;
+  font-weight: bold;
+}
+@media screen and (max-width: 959px) {
+  .eye-txt {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .eye-txt {
+    font-size: 0.5rem;
+  }
+}
+
+.eye-img {
+  display: block;
+  margin-left: 10%;
+  height: 90%;
+  width: 40%;
+}
+@media screen and (max-width: 560px) {
+  .eye-img {
+    order: -2;
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+.eye-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.function {
+  background-color: #e7e7e7;
+}
+
+.fn-item {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.fn-item-img {
+  width: 40%;
+  margin-right: 30px;
+}
+.fn-item-img img {
+  width: 100%;
+  height: 100%;
+}
+.fn-item-txt {
+  width: 50%;
+  text-align: left;
+}
+.fn-item-txt .txtl {
+  margin: 0;
+  text-align: center;
+}
+.fn-item-txt .txtm {
+  margin-top: 20px;
+  padding: 0 30px;
+}
+
+.invite .txtl {
+  margin: 0;
+  margin-left: 30px;
+}
+.invite .btn {
+  width: 30%;
+  margin-top: 30px;
+}
+
+footer {
+  height: 100px;
+  background-color: #3b3b3b;
+  color: #828282;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .txts {
+  font-size: 2rem;
+}
+@media screen and (max-width: 959px) {
+  footer .txts {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
