@@ -8,3 +8,10 @@
     margin-top: 30px;
   }
 }
+.invite-box {
+  .txtl {
+    @include sp {
+      font-size: 3rem;
+    }
+  }
+}
