@@ -145,6 +145,11 @@ html {
     font-size: 1.6rem;
   }
 }
+@media screen and (max-width: 320px) {
+  .btn {
+    font-size: 1rem;
+  }
+}
 .btn:hover {
   opacity: 0.7;
 }
@@ -183,8 +188,14 @@ html {
 }
 @media screen and (max-width: 560px) {
   .txtl {
-    font-size: 2rem;
+    font-size: 1.3rem;
     line-height: 4rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .txtl {
+    font-size: 1.2rem;
+    line-height: 3rem;
   }
 }
 
@@ -196,6 +207,18 @@ html {
 @media screen and (max-width: 959px) {
   .txtm {
     font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .txtm {
+    font-size: 1rem;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .txtm {
+    font-size: 1rem;
     line-height: 2.5rem;
   }
 }
@@ -272,12 +295,12 @@ html {
 }
 @media screen and (max-width: 959px) {
   .eye-txt {
-    font-size: 1rem;
+    font-size: 1.5em;
   }
 }
 @media screen and (max-width: 560px) {
   .eye-txt {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 }
 
