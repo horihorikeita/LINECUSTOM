@@ -1,5 +1,5 @@
 //////////////////
-////   mixin　////
+////   mixin  ////
 /////////////////
 
 @mixin pc {
@@ -19,14 +19,9 @@
     @content;
   }
 }
-@mixin se {
-  @media screen and (max-width: 320px) {
-    @content;
-  }
-}
 
 //////////////////
-////   共通　　////
+////   共通   ////
 /////////////////
 
 html {
@@ -56,9 +51,7 @@ html {
   @include sp {
     font-size: 1rem;
   }
-  @include se {
-    font-size: 1rem;
-  }
+
   &:hover {
     opacity: 0.7;
   }
@@ -94,10 +87,6 @@ html {
     line-height: 5rem;
   }
   @include sp {
-    font-size: 1.3rem;
-    line-height: 4rem;
-  }
-  @include se {
     font-size: 1.2rem;
     line-height: 3rem;
   }
@@ -109,10 +98,6 @@ html {
   margin-top: 50px;
   @include tab {
     font-size: 1.5rem;
-    line-height: 2.5rem;
-  }
-  @include sp {
-    font-size: 1rem;
     line-height: 2.5rem;
   }
   @include sp {
